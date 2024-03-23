@@ -1,0 +1,125 @@
+.emailPage{
+    width: 100vw;
+    height: max-content;
+    position:fixed;
+}
+
+.form {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  width: 80%;
+  background-color: rgba(13, 136, 212, 0.301);
+  border: 2px solid rgb(0, 34, 255);
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow:  0 0 15px #001aff, 0 0 18px #001aff, 0 0 10px #001aff, 0 0 5px #001aff, 0 0 20px #001aff; */
+}
+
+legend {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  width: calc(100% - 12px);
+  height: 30px; /* Setting a fixed height */
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+  margin-bottom: 10px;
+  resize: none; /* Preventing resizing */
+}
+textarea {
+  width: calc(100% - 12px);
+  height: 150px; /* Setting a fixed height */
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+  margin-bottom: 10px;
+  resize: none; /* Preventing resizing */
+}
+
+input[type="email"]:disabled {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.btne {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #0d88d4;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btne:hover {
+  background-color: #106aac;
+}
+
+.popup {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fefefe;
+  /* margin: 20% auto; */
+  padding: 20px;
+  border: 1px solid #888;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+.close p {
+  font-size: 35px;
+}
+
+#ratingStars {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.star {
+  cursor: pointer;
+  color: #435f72;
+}
+
+.star:hover {
+  color: orange;
+}
+
+.hide {
+  display: none;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+#close-email{
+    position: absolute;
+    top: 5%;
+    right: 7%;
+}
