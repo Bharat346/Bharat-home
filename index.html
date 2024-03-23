@@ -46,6 +46,7 @@
             <button id="webBtn">Know more</button>
         </div>
     </header>
+  <div class="menu-page">
     <div class="menu hide" id="menu">
         <span id="close-menu" class="material-symbols-outlined close">close</span>
         <span class="home">Home</span>
@@ -53,6 +54,7 @@
         <span class="notes">Notes</span>
         <span class="contact">Contacts</span>
     </div>
+  </div>
 
     <main>
         <div class="know-more hide">
@@ -104,11 +106,26 @@
             <p data-aos="fade-left">I learn about Frontend + backend JavaScript and Made Many Projects</p><br>
             <p data-aos="fade-left">I am enroll in Robotics and CSIR work-Shop</p><br>
             <p data-aos="fade-left">Now a days I am learning Python for <strong>Cyber security</strong></p>
-        </div><br>
+        </div><br><br>
+        <div class="OneNote">
+          <p data-aos="zoom-out-right" style="text-align: center;">Sports</p><br>
+          <p data-aos="zoom-out-right">I play many Games But Favorite of These are :</p><br>
+          <p style="text-align: center;" data-aos="zoom-out-right">Badminton</p><br>
+          <p style="text-align: center;" data-aos="zoom-out-right">Chess</p><br>
+          <p style="text-align: center;" data-aos="zoom-out-right">Cricket</p><br>
+        </div><br><br>
+
+        <div class="TwoNote">
+          <p data-aos="zoom-out-up" style="text-align: center;">Educational-merits</p><br>
+          <p style="text-align: center;" data-aos="zoom-out-up">10th ~~ RBSE ~~ 2020 ~~ 95.83%</p><br>
+          <p style="text-align: center;" data-aos="zoom-out-up">12th ~~ RBSE ~~ 2022 ~~ 96.20%</p><br>
+          <p style="text-align: center;" data-aos="zoom-out-up">JEE-Mains ~~ NTA ~~ 98.85%tile (2023)</p><br>
+          <p style="text-align: center;" data-aos="zoom-out-up">JEE-Adv. ~~ IIT ~~ 118 Marks (2023)</p>
+        </div><br><br>
 
         <div class="emailPage hide">
             <div class="form">
-                <span onclick="closeRatingPopup()" id="close-email" class="material-symbols-outlined close">close</span>
+                <span style="color: rgb(28, 113, 224); font-size: 30px;" onclick="closeRatingPopup()" id="close-email" class="material-symbols-outlined close">close</span>
                 <fieldset class="f1">
                   <legend>Feedback</legend>
                   <div class="from">
@@ -173,7 +190,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
-    AOS.init({});
+    AOS.init({
+      duration:1000,
+    });
 </script>
 <script src="js/index2.js"></script>
 <script>
