@@ -7,6 +7,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  margin-right: 0px;
 }
 
 header {
@@ -26,6 +27,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   width: 50vw;
+  height: 20px;
   background-color: rgb(207, 241, 224); /* Set your preferred background color */
   padding: 10px;
   margin-top: 10px;
@@ -134,7 +136,7 @@ header {
   }
 }
 .menu {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #1a49c3;
   display: flex;
   flex-direction: column;
@@ -142,13 +144,13 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  position: absolute;
-  left: 0%;
-  top: 0%;
   width: 100vw;
   height: 100vh;
   font-size: 30px;
-  z-index: 1000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
   cursor: pointer;
 }
 .menu .home:hover {
@@ -331,19 +333,4 @@ header {
 .footer_section .github div:hover, .footer_section .support div:hover {
   text-decoration: underline;
   color: #4b44c1;
-}
-
-.emailPage {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow-y: hidden;
-  z-index: 99999;
-}
-.emailPage #email_frame {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
